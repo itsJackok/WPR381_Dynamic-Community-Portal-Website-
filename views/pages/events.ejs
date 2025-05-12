@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community Portal</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/events">Events</a> |
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Upcoming Events</h1>
+
+    <div class="event-list">
+      <% if (events && events.length > 0) { %>
+        <% events.forEach(event => { %>
+          <div class="event-card">
+            <h2><%= event.title %></h2>
+            <p><strong>Date:</strong> <%= event.date %></p>
+            <p><strong>Location:</strong> <%= event.location %></p>
+            <% if (event.image) { %>
+              <img src="/images/<%= event.image %>" alt="Event Image" class="event-img" />
+            <% } %>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p>No upcoming events at the moment.</p>
+      <% } %>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Community Portal</p>
+  </footer>
+</body>
+</html>
