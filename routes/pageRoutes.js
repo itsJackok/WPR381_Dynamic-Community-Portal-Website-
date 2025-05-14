@@ -4,18 +4,18 @@ const router = express.Router();
 
 
 const team = [
-  { name: 'Jack', role: 'Team Lead' },
-  { name: 'Ryan', role: 'Backend Developer' },
-  { name: 'Zirong', role: 'Frontend Developer' },
-  { name: 'Tristan', role: 'Data Manager' }
+  { name: 'Jack Mapheto', stNumber: '601370', role: 'Team Leader' },
+  { name: 'Ryan Andrews', stNumber: '601135', role: 'Backend Developer' },
+  { name: 'Zirong Luo', stNumber: '600287', role: 'Frontend Developer' },
+  { name: 'Tristan Ball', stNumber: '601541', role: 'Data Manager' }
 ];
 
 const events = [
-  { title: 'Cleanup Drive', date: '17 May 2025', time: '9:00 AM - 1:00 PM',  location: 'Park', image: 'cleanup.jpg' },
-  { title: 'Food Donation', date: '25 May 2025', time: '10:00 AM - 4:00 PM', location: 'Community Hall', image: 'food.jpg' },
-  { title: 'Health & Wellness Fair', date: '12 August 2025', time: '10:00 AM - 4:00 PM', location: 'Sports Complex', image: 'food.jpg' },
-  { title: 'Entrepreneurship Workshop', date: '13 June 2025', time: '6:00 PM - 8:00 PM', location: 'Community Centre', image: 'food.jpg' },
-  { title: 'Youth Art Exhibition', date: '16 June 2025', time: '10:00 AM - 5:00 PM', location: 'Arts Centre Gallery', image: 'food.jpg' },
+  { title: 'Cleanup Drive', date: '17 May 2025', time: '9:00 AM - 1:00 PM',  location: 'Park', image: 'cleanUp.jpg' },
+  { title: 'Food Donation', date: '25 May 2025', time: '10:00 AM - 4:00 PM', location: 'Community Hall', image: 'food.jpeg' },
+  { title: 'Health & Wellness Fair', date: '12 August 2025', time: '10:00 AM - 4:00 PM', location: 'Sports Complex', image: 'Wellness.jpg' },
+  { title: 'Entrepreneurship Workshop', date: '13 June 2025', time: '6:00 PM - 8:00 PM', location: 'Community Centre', image: 'entre.jpg' },
+  { title: 'Youth Art Exhibition', date: '16 June 2025', time: '10:00 AM - 5:00 PM', location: 'Arts Centre Gallery', image: 'art.jpg' },
 
 ];
 
@@ -69,3 +69,4 @@ router.get('/thankyou', (req, res) => {
 });
 
 module.exports = router;
+
