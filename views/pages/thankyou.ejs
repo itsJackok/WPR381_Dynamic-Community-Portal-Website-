@@ -1,4 +1,9 @@
-<link rel="stylesheet" href="/css/style.css" />
+<%- include('../partials/header.ejs', { title: 'Thank You' }) %>
 
-<h1>Thank You!</h1>
-<p>Your message has been received. We'll get back to you shortly.</p>
+<div class="text-center">
+  <h2>Thank You!</h2>
+  <p>Your message has been received. We'll get back to you soon.</p>
+  <a class="btn btn-primary mt-3" href="/">Back to Home</a>
+</div>
+
+<%- include('../partials/footer.ejs') %>
