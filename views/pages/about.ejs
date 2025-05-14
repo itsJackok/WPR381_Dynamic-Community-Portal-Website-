@@ -1,12 +1,20 @@
 <%- include('../partials/header.ejs', { title: 'About' }) %>
 
-<h2>About Us</h2>
-<ul class="list-group">
+
+<h2 class="text-center mb-4">Meet Our Team</h2>
+
+<div class="row justify-content-center">
   <% team.forEach(member => { %>
-    <li class="list-group-item">
-      <strong><%= member.name %></strong> – <%= member.role %>
-    </li>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-bold"><%= member.name %></h5>
+          <p class="card-text text-muted"><%= member.role %></p>
+          <p class="card-text text-muted"><%= member.stNumber %></p>
+        </div>
+      </div>
+    </div>
   <% }) %>
-</ul>
+</div>
 
 <%- include('../partials/footer.ejs') %>
