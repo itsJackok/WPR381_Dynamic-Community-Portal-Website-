@@ -1,42 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Community Portal</title>
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/about">About</a> |
-      <a href="/events">Events</a> |
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
+<%- include('../partials/header.ejs', { title: 'Events' }) %>
 
-  <main>
-    <h1>Upcoming Events</h1>
+<h2>Upcoming Events</h2>
 
-    <div class="event-list">
-      <% if (events && events.length > 0) { %>
-        <% events.forEach(event => { %>
-          <div class="event-card">
-            <h2><%= event.title %></h2>
-            <p><strong>Date:</strong> <%= event.date %></p>
-            <p><strong>Location:</strong> <%= event.location %></p>
-            <% if (event.image) { %>
-              <img src="/images/<%= event.image %>" alt="Event Image" class="event-img" />
-            <% } %>
-          </div>
-        <% }) %>
-      <% } else { %>
-        <p>No upcoming events at the moment.</p>
-      <% } %>
+<div class="row">
+  <% events.forEach(event => { %>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100">
+        <img src="<%= event.image %>" class="card-img-top" alt="<%= event.title %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= event.title %></h5>
+          <p class="card-text"><strong>Date:</strong> <%= event.date %></p>
+          <p class="card-text"><strong>Time:</strong> <%= event.time %></p>
+          <p class="card-text"><strong>Location:</strong> <%= event.location %></p>
+        </div>
+      </div>
     </div>
-  </main>
+  <% }) %>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Community Portal</p>
-  </footer>
-</body>
-</html>
+<%- include('../partials/footer.ejs') %>
