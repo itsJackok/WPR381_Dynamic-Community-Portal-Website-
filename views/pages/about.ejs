@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Community Portal</title>
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Home</a> |
-      <a href="/about">About</a> |
-      <a href="/events">Events</a> |
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
-  <main>
+<%- include('../partials/header.ejs', { title: 'About' }) %>
+
+<h2>About Us</h2>
+<ul class="list-group">
+  <% team.forEach(member => { %>
+    <li class="list-group-item">
+      <strong><%= member.name %></strong> – <%= member.role %>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include('../partials/footer.ejs') %>
