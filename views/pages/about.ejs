@@ -1,28 +1,20 @@
-<%- include('../partials/header.ejs', { title: 'Contact Us' }) %>
+<%- include('../partials/header.ejs', { title: 'About' }) %>
 
-<h2 class="text-center mb-4">Contact Us</h2>
+
+<h2 class="text-center mb-4">Meet Our Team</h2>
 
 <div class="row justify-content-center">
-  <div class="col-md-6">
-    <form action="/contact" method="POST" class="p-4 shadow rounded bg-white">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name:</label>
-        <input type="text" id="name" name="name" class="form-control form-filled" required>
+  <% team.forEach(member => { %>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-bold"><%= member.name %></h5>
+          <p class="card-text text-muted"><%= member.role %></p>
+          <p class="card-text text-muted"><%= member.stNumber %></p>
+        </div>
       </div>
-
-      <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" id="email" name="email" class="form-control form-filled" required>
-      </div>
-
-      <div class="mb-3">
-        <label for="message" class="form-label">Message:</label>
-        <textarea id="message" name="message" class="form-control form-filled" rows="5" required></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary w-100">Send Message</button>
-    </form>
-  </div>
+    </div>
+  <% }) %>
 </div>
 
 <%- include('../partials/footer.ejs') %>
