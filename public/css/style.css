@@ -1,9 +1,10 @@
-/* Reset some default spacing */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,11 +13,45 @@ body {
   line-height: 1.6;
 }
 
-/* Header and Navigation */
+
 header {
-  background-color: #333;
-  padding: 1em 0;
+  background-color: cyan;
+  padding: 1em 0 0.5em;
   text-align: center;
+}
+
+.header-title-box {
+  background-color: white;
+  color: rgb(255, 94, 0);
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 12px;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5em;
+  animation: floatIn 1s ease-out;
+  transition: box-shadow 0.4s ease;
+}
+
+.header-title-box:hover {
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+}
+
+@keyframes floatIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Navigation */
+nav {
+  margin-top: 0.5em;
 }
 
 nav a {
@@ -24,14 +59,15 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: rgb(255, 94, 0);
+  transform: scale(1.1);
 }
 
-/* Main Content */
+
 main {
   padding: 2em;
   max-width: 960px;
@@ -61,7 +97,7 @@ main {
   color: #555;
 }
 
-/* Features (Home Cards) */
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -89,32 +125,40 @@ main {
   color: #555;
 }
 
-.btn {
+
+.btn,
+form button {
   display: inline-block;
   margin-top: 1em;
   padding: 0.6em 1.2em;
-  background-color: #333;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.8s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #555;
+.btn:hover,
+form button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: scale(1.08);
+  opacity: 0.9;
 }
 
-/* Footer */
+
 footer {
-  background-color: #333;
+  background-color: cyan;
   color: white;
   padding: 1em;
   text-align: center;
   margin-top: 2em;
-  border-top: 2px solid #222;
+  
 }
 
-/* Contact Form */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -123,28 +167,52 @@ footer {
   margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.75em;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 1em;
+  background-color: #f0f4ff;
+  color: #333;
 }
 
 textarea {
   resize: vertical;
 }
 
-button {
-  background-color: #333;
-  color: white;
-  padding: 0.75em;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
+
+.form-filled {
+  background-color: #f0f4ff;
+  border: 1px solid #b0c4de;
+  color: #333;
 }
 
-button:hover {
-  background-color: #555;
+form.bg-white {
+  background-color: #ffffff;
 }
+
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.3em;
+}
+
+.card-text {
+  font-size: 1em;
+}
+
