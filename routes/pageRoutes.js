@@ -10,10 +10,10 @@ const router = express.Router();
 
 //Team member array (About page)
 const team = [
-  { name: 'Jack Mapheto', stNumber: '601370', role: 'Team Leader' },
-  { name: 'Ryan Andrews', stNumber: '601135', role: 'Backend Developer' },
-  { name: 'Zirong Luo', stNumber: '600287', role: 'Frontend Developer' },
-  { name: 'Tristan Ball', stNumber: '601541', role: 'Data Manager' }
+  { name: 'Tristan Ball', stNumber: '601370', role: 'Team Leader/Document Manager' },
+  { name: 'Ryan Andrews', stNumber: '601135', role: 'Front/Backend Developer' },
+  { name: 'Zirong Luo', stNumber: '600287', role: 'Front/Backend Developer' },
+  { name: 'Jack Mapheto', stNumber: '601541', role: 'Front/Backend Developer' }
 ];
 
 //Events array (Events page)
