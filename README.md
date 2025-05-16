@@ -35,13 +35,13 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 
 ## Setup
 
-1. **Clone Repository**
+1. **Clone Repository:**
     Clone from the github repository webapp under code, or use git clone <url> in bash.
-2. **Install Dependencies**
+2. **Install Dependencies:**
     npm install 
-3. **Run app**
+3. **Run app:**
     npm run dev
-4. **Visiting the site**
+4. **Visiting the site:**
     ctrl left-click to go to http://localhost:3000,
     or open the site in the browser
 
@@ -49,9 +49,9 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 ```
 
 WPR381_Dyanmic-Community-Portal-Website-/
-├── public/ # Static assets
+├── public/
 │ ├── css/
-│ │ └── style.css # Custom styles
+│ │ └── style.css
 │ └── images/
 │   ├── art.jpg
 │   ├── cleanUp.jpg
