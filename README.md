@@ -6,7 +6,7 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 
 ## GitHub Repository
 
-[To view repo, Click Here]()
+https://github.com/itsJackok/WPR381_Dynamic-Community-Portal-Website-
 
 ## Team Members & Roles
 
@@ -31,7 +31,7 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 - Express.js
 - EJS (Embedded JavaScript Templates)
 - Bootstrap 5
-- Git & GitHub
+- GitHub
 
 ## Setup
 
@@ -42,7 +42,7 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 3. **Run app**
     npm run dev
 4. **Visiting the site**
-    Shift left-click to go to http://localhost:3000,
+    ctrl left-click to go to http://localhost:3000,
     or open the site in the browser
 
 ## Project Structure
