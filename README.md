@@ -6,7 +6,7 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
 
 ## GitHub Repository
 
-https://github.com/itsJackok/WPR381_Dynamic-Community-Portal-Website-
+[To View the Repo, Click Here](https://github.com/itsJackok/WPR381_Dynamic-Community-Portal-Website-)
 
 ## Team Members & Roles
 
