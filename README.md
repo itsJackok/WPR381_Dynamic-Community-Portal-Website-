@@ -46,23 +46,34 @@ This project was designed to demonstrate and apply dynamic content rendering, ex
     or open the site in the browser
 
 ## Project Structure
+```
 
-project/
-├── views/
-│   ├── pages/
-│   │   ├── home.ejs
-│   │   ├── about.ejs
-│   │   ├── events.ejs
-│   │   ├── contact.ejs
-│   │   └── thankyou.ejs
-│   └── partials/
-│       ├── header.ejs
-│       └── footer.ejs
-├── public/
-│   ├── css/
-│   └── images/
+WPR381_Dyanmic-Community-Portal-Website-/
+├── public/ # Static assets
+│ ├── css/
+│ │ └── style.css # Custom styles
+│ └── images/
+│   ├── art.jpg
+│   ├── cleanUp.jpg
+│   ├── entre.jpg
+│   ├── food.jpeg
+│   └── Wellness.jpg
 ├── routes/
-│   └── pageRoutes.js
+│ └── pageRoutes.js
+├── views/
+│ ├── pages/
+│ │ ├── home.ejs
+│ │ ├── about.ejs
+│ │ ├── events.ejs
+│ │ ├── contact.ejs
+│ │ └── thankyou.ejs
+│ └── partials/
+│ ├── header.ejs
+│ └── footer.ejs
+├── .gitignore
 ├── app.js
-├── package.json
-└── .gitignore
+├── package.json 
+├── package-lock.json
+└── README.md
+
+```
